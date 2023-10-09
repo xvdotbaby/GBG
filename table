@@ -1,4 +1,3 @@
-script_key="KeyHere";-- [ replace [keyhere] with your key ]
 getgenv().Kos = {
     ["Options"] = {
         Intro = true,
