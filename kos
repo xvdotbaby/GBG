@@ -1,0 +1,2 @@
+script_key = getgenv().Kos.Options.Key;
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/61f74696d59e5776155c68d9f22eefd4.lua"))()
