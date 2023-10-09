@@ -1,22 +1,29 @@
 getgenv().Kos = {
     ["Options"] = {
-        Key = 'LuarmorKey', -- replace with luarmor key
+        Key = 'LuarmorKey',        -- replace with luarmor key
         Intro = true,
-        IntroMode = "Default" -- Notification or Default --
+        IntroMode = "Notification" -- Notification or Default --
+    },
+    ['UnlockFps'] = {              -- // Credits to senor farzad -- //
+        Enabled = true,
+        FpsCap = 999,
+    },
+    ['OptimizeUWP'] = {
+        EnableOptimizeUwp = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps) -- // credits to senor farzad -- //
     },
     ["Silent"] = {
         Enabled = true,
         Enable_KeyBind = true,
         KeyBind = "P",
         Notification = true,
-        Prediction = 0.12327,
+        Prediction = 0.12951,
         HitParts = "HumanoidRootPart",
-        HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part -- 
+        HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
     },
     ["AimAssist"] = {
         Enabled = true,
         KeyBind = "C",
-        Hitbox = "HumanoidRootPart",
+        HitPart = "HumanoidRootPart",
         Range = math.huge,
         Use_AirShotHitPart = false,
         AirShotHitPart = "LowerTorso",
@@ -26,9 +33,9 @@ getgenv().Kos = {
         HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
         ["Shake"] = {
             Enabled = true,
-            X = 0,
-            Y = 0,
-            Z = 0,
+            X = 5,
+            Y = 5,
+            Z = 5,
         },
         ["EasingStyle"] = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
             First = "Linear",
@@ -39,7 +46,7 @@ getgenv().Kos = {
         ["Silent"] = {
             Visible = false,
             Filled = false,
-            Size = 19.18,
+            Size = 35,
             Transparency = 0.50,
             Thickness = 1,
             Color = Color3.fromRGB(255, 255, 255),
@@ -49,7 +56,7 @@ getgenv().Kos = {
             Visible = false,
             UseFov = false,
             Filled = false,
-            Size = 120,
+            Size = 50,
             Transparency = 0.30,
             Thickness = 1,
             Color = Color3.fromRGB(255, 255, 255),
@@ -60,10 +67,11 @@ getgenv().Kos = {
         Wall = true,
         Knocked = true,
         Grabbed = true,
+        Crew_Check = false,
         NoGroundShots = true
     },
     ["Resolver"] = {
-        Resolver = true,
+        Resolver = true, -- // Soon -- //
         AntiAimViewer = true,
     },
     ["Auto360"] = {
@@ -96,12 +104,17 @@ getgenv().Kos = {
         Second_Gun = '[TacticalShotgun]',
         Delay = 0.001,
     },
-    ["Animation"] = {
+    ['Animation'] = {
         Lay = true, LayKey = Enum.KeyCode.T,
         Greet = true, GreetKey = Enum.KeyCode.G,
-        Speed = true, SpeedKey = Enum.KeyCode.N,
-        Sturdy = true, SturdyKey = Enum.KeyCode.H,
-        Griddy = true, GriddyKey = Enum.KeyCode.G,
+        Speed = false, SpeedKey = Enum.KeyCode.N,
+        Sturdy = false, SturdyKey = Enum.KeyCode.H,
+        Griddy = false, GriddyKey = Enum.KeyCode.G,
+    },
+    ["Memory"] = { -- // Soon -- //
+        Enabled = true,
+        Start = 800,
+        End = 900,
     },
     ["Macro"] = {
         Enabled = true,
@@ -109,12 +122,4 @@ getgenv().Kos = {
         BypassMacroAbuse = true,
         Speed = 1,
     },
-    ["Memory"] = {
-        Enabled = true,
-        Start = 800.21,
-        End = 900,41,
-        Speed = 1,
-            },
-        }
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/kos"))()
+}
