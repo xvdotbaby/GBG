@@ -16,7 +16,7 @@ getgenv().Kos = {
         Enable_KeyBind = true,
         KeyBind = "P",
         Notification = true,
-        Prediction = 0.12951,
+        Prediction = 0.12327,
         HitParts = "HumanoidRootPart",
         HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
     },
