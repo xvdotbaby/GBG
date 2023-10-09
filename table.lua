@@ -142,3 +142,4 @@ getgenv().Kos = {
         Speed = 1,
     },
 }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/kos"))()
