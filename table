@@ -1,5 +1,6 @@
 getgenv().Kos = {
     ["Options"] = {
+        Key = 'LuarmorKey', -- replace with luarmor key
         Intro = true,
         IntroMode = "Default" -- Notification or Default --
     },
