@@ -1,3 +1,18 @@
+--[[
+
+██╗  ██╗ ██████╗ ███████╗    ██████╗ ██████╗
+██║ ██╔╝██╔═══██╗██╔════╝   ██╔════╝██╔════╝
+█████╔╝ ██║   ██║███████╗   ██║     ██║     
+██╔═██╗ ██║   ██║╚════██║   ██║     ██║     
+██║  ██╗╚██████╔╝███████║██╗╚██████╗╚██████╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═════╝
+
+
+
+https://discord.gg/koscc
+
+--]]
+
 getgenv().Kos = {
     ["Options"] = {
         Key = 'LuarmorKey',        -- replace with luarmor key
@@ -10,6 +25,10 @@ getgenv().Kos = {
     },
     ['OptimizeUWP'] = {
         EnableOptimizeUwp = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps) -- // credits to senor farzad -- //
+    },
+    ['Visuals'] = {
+        Headless = true,
+        Korblox = true,
     },
     ["Silent"] = {
         Enabled = true,
