@@ -1,6 +1,6 @@
+script_key="KeyHere";-- [ replace [keyhere] with your key ]
 getgenv().Kos = {
     ["Options"] = {
-        Key = 'KeyHere', -- [ replace [keyhere] with your key ]
         Intro = true,
         IntroMode = "Default" -- Notification or Default --
     },
