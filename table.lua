@@ -164,3 +164,5 @@ getgenv().Kos = {
         Health_Type = "Bar"
     },
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/kos"))()
