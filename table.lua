@@ -1,145 +1,166 @@
 --[[
+██╗  ██╗ ██████╗ ███████╗    ██╗   ██╗   ██╗
+██║ ██╔╝██╔═══██╗██╔════╝    ██║   ██║   ███║
+█████╔╝ ██║   ██║███████╗    ██║   ██║   ██║
+██╔═██╗ ██║   ██║╚════██║    ╚██╗ ██╔╝   ██║
+██║  ██╗╚██████╔╝███████║     ╚████╔╝    ██║
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝      ╚═══╝     ╚═╝
 
-██╗  ██╗ ██████╗ ███████╗    ██████╗ ██████╗
-██║ ██╔╝██╔═══██╗██╔════╝   ██╔════╝██╔════╝
-█████╔╝ ██║   ██║███████╗   ██║     ██║     
-██╔═██╗ ██║   ██║╚════██║   ██║     ██║     
-██║  ██╗╚██████╔╝███████║██╗╚██████╗╚██████╗
-╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝ ╚═════╝ ╚═════╝
+██╗   ██╗██████╗ ██████╗  █████╗ ████████╗███████╗
+██║   ██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+██║   ██║██████╔╝██║  ██║███████║   ██║   █████╗
+██║   ██║██╔═══╝ ██║  ██║██╔══██║   ██║   ██╔══╝
+╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗
+ ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 
 
 
 https://discord.gg/koscc
+https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/table.lua
 
 --]]
 
+
+
+
 getgenv().Kos = {
-    ["Options"] = {
-        Key = 'LuarmorKey',        -- replace with luarmor key
+    ['Options'] = {
+        Key = 'keyhere',        -- [ replace [keyhere] with your key ]
         Intro = true,
-        IntroMode = "Notification" -- Notification or Default --
+        IntroMode = "Default", -- Notification or Default --
+        BestConnection = false, -- // Finds the best ping -- //
+        ['UnlockFps'] = {
+            Enabled = true,     -- [ basicaly fps unlocker ]
+            FpsCap = 999,
+        },
+        ['OptimizeUWP'] = false, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
     },
-    ['UnlockFps'] = {              -- // Credits to senor farzad -- //
-        Enabled = true,
-        FpsCap = 999,
-    },
-    ['OptimizeUWP'] = {
-        EnableOptimizeUwp = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps) -- // credits to senor farzad -- //
-    },
-    ['Visuals'] = {
-        Headless = true,
-        Korblox = true,
-    },
-    ["Silent"] = {
+    ['Silent'] = {
         Enabled = true,
         Enable_KeyBind = true,
-        KeyBind = "P",
-        Notification = true,
-        Prediction = 0.12327,
+        Keybind = "p",
         HitParts = "HumanoidRootPart",
-        HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
+        Notification = true,
+        Prediction = 0.135,
+        NearestPoint = true,
+        NearestPart = false,
     },
-    ["AimAssist"] = {
+    ['AimAssist'] = {
         Enabled = true,
-        KeyBind = "C",
-        HitPart = "HumanoidRootPart",
-        Range = math.huge,
-        Use_AirShotHitPart = false,
-        AirShotHitPart = "LowerTorso",
-        Prediction = 0.1429,
+        Keybind = "c",
+        FirstPerson = true,
+        ThirdPerson = true,
+        Predict = true,
+        Prediction = 0.115,
         Smooth = true,
-        SmoothValue = 0.0959,
-        HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
-        ["Shake"] = {
-            Enabled = true,
-            X = 5,
-            Y = 5,
-            Z = 5,
-        },
-        ["EasingStyle"] = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
-            First = "Linear",
-            Second = "InOut"
-        },
+        SmoothValue = 0.014,
+        HitPart = "HumanoidRootPart",
+        NearestPart = true,
     },
-    ["Fov"] = {
-        ["Silent"] = {
-            Visible = false,
-            Filled = false,
-            Size = 35,
-            Transparency = 0.50,
-            Thickness = 1,
-            Color = Color3.fromRGB(255, 255, 255),
-            Sides = 20
+    ['Fov'] = {
+        ['Silent'] = {
+            Visible = true,
+            Radius = 35,
+            Default = 20,
+            Color = "255, 255, 255"
         },
-        ["AimAssist"] = {
-            Visible = false,
-            UseFov = false,
-            Filled = false,
-            Size = 50,
-            Transparency = 0.30,
-            Thickness = 1,
-            Color = Color3.fromRGB(255, 255, 255),
-            Sides = 20
+        ['AimAssist'] = {
+            Radius = 35,
         },
     },
-    ["Checks"] = {
-        Wall = true,
-        Knocked = true,
-        Grabbed = true,
-        Crew_Check = false,
-        NoGroundShots = true
+    ['ChecksV1'] = {            -- // For Silent -- //
+        Knocked = true,         -- // KO Check -- //
+        Wall = true,            -- // Wall Check -- //
+        Grabbed = true,         -- // Grabbed Check -- //
+        Crew_Check = false,     -- // Crew Check -- //
+        NoGroundShots = true,   -- // No Ground Shots -- //
     },
-    ["Resolver"] = {
-        Resolver = true, -- // Soon -- //
-        AntiAimViewer = true,
+    ['ChecksV2'] = {            -- // For AimAssist -- //
+        Knocked = true,         -- // KO Check -- //
+        Wall = true,            -- // Wall Check -- //
+        Reset = true            -- // Unlocks once you reset -- //
     },
-    ["Auto360"] = {
-        Enabled = true,
-        SpinKeybind = "Q",
-        SpinSpeed = 1,
+    ['Resolver'] = {            -- // Resolves Antilocks -- //
+        Enabled = true,         -- // Keep this enable -- //
+        Min = 80,               -- // keep this as default -- //
+        Max = -40,              -- // keep this as default -- //
+        Anti_Aim_Viewer = true, -- // Bypasses Aim Viewer -- //
     },
-    ["FakeSpike"] = {
-        Enabled = true,
-        FakeSpikeKeybind = "K",
-        SpikeDuration = 1,
-    },
-    ["Settings"] = {
+    ['Settings'] = {
         AutoLowGFX = false,
         MuteBoomBox = false,
         AutoReload = false,
     },
-    ["TriggerBot"] = {
-        Enabled = true,
+    ['TriggerBot'] = {
+        Enabled = false,
         Notification = true,
         Use_KeyBind = true,
         EnableDelay = true,
         KeyBind = "T",
         Delay = 0.001,
     },
-    ["Noclip_Macro"] = {
-        Enabled = false,
-        KeyBind = "H",
-        First_Gun = '[Shotgun]',
-        Second_Gun = '[TacticalShotgun]',
-        Delay = 0.001,
-    },
-    ['Animation'] = {
-        Lay = true, LayKey = Enum.KeyCode.T,
-        Greet = true, GreetKey = Enum.KeyCode.G,
+    ['Animation'] = { -- once u click the keybinds it makes u use the Animation
+        Lay = false, LayKey = Enum.KeyCode.T,
+        Greet = false, GreetKey = Enum.KeyCode.G,
         Speed = false, SpeedKey = Enum.KeyCode.N,
         Sturdy = false, SturdyKey = Enum.KeyCode.H,
         Griddy = false, GriddyKey = Enum.KeyCode.G,
     },
-    ["Memory"] = { -- // Soon -- //
+    ['GunSorting'] = {
         Enabled = true,
-        Start = 800,
-        End = 900,
+        Keybind = "X",
+        Slots = { "[Double-Barrel SG]", "[TacticalShotgun]", "[Revolver]", "[Chicken]", "[Pizza]" },
     },
-    ["Macro"] = {
+    ['Macro'] = {
         Enabled = true,
         KeyBind = "X",
-        BypassMacroAbuse = true,
+        BypassMacroAbuse = false,
         Speed = 1,
     },
+    ['Memory'] = {
+        Enabled = true,
+        Start = 971,
+        End = 984,
+    },
+    ['GunFov'] = {
+        Enabled = false,
+        DoubleBarrel = 25,
+        Revolver = 25,
+        Rifle = 25,
+        Shotgun = 25,
+        Smg = 25,
+        TacticalShotgun = 25,
+        Silencer = 25,
+        AK47 = 25,
+        AR = 25,
+        P90 = 25,
+        AUG = 25,
+        SilencerAR = 25,
+    },
+    ['Range'] = {
+        Enabled = true,
+        Type = "Fov",
+        Close = 15,
+        Mid = 30,
+        Far = 120,
+        VeryFar = math.huge,
+        CloseFov = 15,
+        ClosePrediction = 0.135,
+        MidFov = 7,
+        MidPrediction = 0.135,
+        FarFov = 4,
+        FarPrediction = 0.135,
+        VeryFarFov = 2,
+        VeryFarPrediction = 0.135,
+    },
+    Esp = {
+        Enabled = true,
+        Bounding_Box = true,
+        Fill_Box = false,
+        Fill_Transparency = 0.75,
+        Distance = false,
+        Names = true,
+        Health = true,
+        Health_Type = "Bar"
+    },
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/kos"))()
