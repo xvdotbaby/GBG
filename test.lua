@@ -211,3 +211,5 @@ getgenv().Brutality = {
 		Health_Type = "Bar"
 	},
 }
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xvdotbaby/Brutality/main/Loader"))()
