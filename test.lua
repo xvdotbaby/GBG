@@ -1,10 +1,10 @@
 --[[
-██████╗ ██████╗ ██╗   ██╗████████╗ █████╗ ██╗     ██╗████████╗██╗   ██╗       
+██████╗ ██████╗ ██╗   ██╗████████╗ █████╗ ██╗     ██╗████████╗██╗   ██╗
 ██╔══██╗██╔══██╗██║   ██║╚══██╔══╝██╔══██╗██║     ██║╚══██╔══╝╚██╗ ██╔╝
-██████╔╝██████╔╝██║   ██║   ██║   ███████║██║     ██║   ██║    ╚████╔╝ 
-██╔══██╗██╔══██╗██║   ██║   ██║   ██╔══██║██║     ██║   ██║     ╚██╔╝  
-██████╔╝██║  ██║╚██████╔╝   ██║   ██║  ██║███████╗██║   ██║      ██║   
-╚═════╝ ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝   ╚═╝      ╚═╝     
+██████╔╝██████╔╝██║   ██║   ██║   ███████║██║     ██║   ██║    ╚████╔╝
+██╔══██╗██╔══██╗██║   ██║   ██║   ██╔══██║██║     ██║   ██║     ╚██╔╝
+██████╔╝██║  ██║╚██████╔╝   ██║   ██║  ██║███████╗██║   ██║      ██║
+╚═════╝ ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝   ╚═╝      ╚═╝
 
 ██╗   ██╗██████╗ ██████╗  █████╗ ████████╗███████╗
 ██║   ██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
@@ -12,7 +12,7 @@
 ██║   ██║██╔═══╝ ██║  ██║██╔══██║   ██║   ██╔══╝
 ╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗
  ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
- 
+
 https://discord.gg/brutalitycc
 https://raw.githubusercontent.com/VdotBabyy/Brutality.cc/main/table.lua
 
@@ -21,11 +21,11 @@ https://raw.githubusercontent.com/VdotBabyy/Brutality.cc/main/table.lua
 
 getgenv().Brutality = {
 	['Options'] = {
-		Key = 'keyhere',        -- [ replace [keyhere] with your key ]
+		Key = 'keyhere',  -- [ replace [keyhere] with your key ]
 		Intro = true,
 		BestConnection = false, -- // Finds the best ping -- //
 		['UnlockFps'] = {
-			Enabled = true,     -- [ basicaly fps unlocker ]
+			Enabled = true, -- [ basicaly fps unlocker ]
 			FpsCap = 999,
 		},
 		['OptimizeUWP'] = false, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
@@ -43,27 +43,27 @@ getgenv().Brutality = {
 		HitPart_Mode = 'Nearest Point' -- 'Nearest Part', 'Nearest Point', 'Default',
 	},
 	['AimAssist'] = {
-        Enabled = true,
-        KeyBind = "C",
-        HitPart = "HumanoidRootPart",
-        Range = math.huge,
-        Use_AirShotHitPart = false,
-        AirShotHitPart = "LowerTorso",
-        Prediction = 0.135,
-        Smooth = true,
-        SmoothValue = 0.014,
-        HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
-        ['Shake'] = {
-            Enabled = true,
-            X = 5,
-            Y = 5,
-            Z = 5,
-        },
-        ['EasingStyle'] = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
-            First = "Linear",
-            Second = "InOut"
-        },
-    },
+		Enabled = true,
+		KeyBind = "C",
+		HitPart = "HumanoidRootPart",
+		Range = math.huge,
+		Use_AirShotHitPart = false,
+		AirShotHitPart = "LowerTorso",
+		Prediction = 0.135,
+		Smooth = true,
+		SmoothValue = 0.014,
+		HitPart_Mode = "Nearest Point", -- HitParts or Nearest Point or Nearest Part --
+		['Shake'] = {
+			Enabled = true,
+			X = 5,
+			Y = 5,
+			Z = 5,
+		},
+		['EasingStyle'] = { --// Current Methods : ( Linear, Sine, Back, Quad, Quart, Quint, Bounce, Elastic, Exponential, Circular, Cubic )
+			First = "Linear",
+			Second = "InOut"
+		},
+	},
 	['Fov'] = {
 		['Silent'] = {
 			Visible = true,
@@ -73,30 +73,30 @@ getgenv().Brutality = {
 		},
 		['AimAssist'] = {
 			Visible = false,
-            UseFov = false,
-            Filled = false,
-            Size = 200,
-            Transparency = 0.30,
-            Thickness = 1,
-            Color = Color3.fromRGB(255, 255, 255),
-            Sides = 20
+			UseFov = false,
+			Filled = false,
+			Size = 200,
+			Transparency = 0.30,
+			Thickness = 1,
+			Color = Color3.fromRGB(255, 255, 255),
+			Sides = 20
 		},
 	},
-	['ChecksV1'] = {            -- // For Silent -- //
-		Knocked = true,         -- // KO Check -- //
-		Wall = true,            -- // Wall Check -- //
-		Grabbed = true,         -- // Grabbed Check -- //
-		Crew_Check = false,     -- // Crew Check -- //
-		NoGroundShots = true,   -- // No Ground Shots -- //
+	['ChecksV1'] = {      -- // For Silent -- //
+		Knocked = true,   -- // KO Check -- //
+		Wall = true,      -- // Wall Check -- //
+		Grabbed = true,   -- // Grabbed Check -- //
+		Crew_Check = false, -- // Crew Check -- //
+		NoGroundShots = true, -- // No Ground Shots -- //
 	},
-	['ChecksV2'] = {            -- // For AimAssist -- //
-		Knocked = true,         -- // KO Check -- //
-		Wall = true,            -- // Wall Check -- //
+	['ChecksV2'] = {      -- // For AimAssist -- //
+		Knocked = true,   -- // KO Check -- //
+		Wall = true,      -- // Wall Check -- //
 	},
-	['Resolver'] = {            -- // Resolves Antilocks -- //
-		Enabled = true,         -- // Keep this enable -- //
-		Min = 80,               -- // keep this as default -- //
-		Max = -40,              -- // keep this as default -- //
+	['Resolver'] = {      -- // Resolves Antilocks -- //
+		Enabled = true,   -- // Keep this enable -- //
+		Min = 80,         -- // keep this as default -- //
+		Max = -40,        -- // keep this as default -- //
 		Anti_Aim_Viewer = true, -- // Bypasses Aim Viewer -- //
 	},
 	['Settings'] = {
@@ -112,7 +112,7 @@ getgenv().Brutality = {
 		KeyBind = "T",
 		Delay = 0.001,
 	},
-['Noclip_Macro'] = {
+	['Noclip_Macro'] = {
 		Enabled = false,
 		KeyBind = Enum.KeyCode.H,
 		Gun = '[Shotgun]',
@@ -192,7 +192,7 @@ getgenv().Brutality = {
 		P180 = 0.1672,
 		P190 = 0.1848,
 		P200 = 0.1865
-		},
+	},
 	['Chat'] = {
 		Enabled = false,
 		HitChance = '$hc',
