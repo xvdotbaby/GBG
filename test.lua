@@ -56,13 +56,13 @@ getgenv().Brutality = {
 	    },
 	    ['Fov'] = {
 	        ['Silent'] = {
-	            Visible = true,
-	            Radius = 35,
-	            Default = 20,
-	            Color = "255, 255, 255"
+	        Visible = true,
+	        Radius = 35,
+	        Default = 20,
+	        Color = "255, 255, 255"
 	        },
 	        ['AimAssist'] = {
-	            Radius = 35,
+	        Radius = 35,
 	        },
 	    },
 	    ['ChecksV1'] = {            -- // For Silent -- //
@@ -97,10 +97,10 @@ getgenv().Brutality = {
 	        Delay = 0.001,
 	    },
 	['Noclip_Macro'] = {
-		    Enabled = false,
-		    KeyBind = Enum.KeyCode.H,
-		    Gun = '[Shotgun]',
-		    Interval = 0.001,
+		Enabled = false,
+		KeyBind = Enum.KeyCode.H,
+		Gun = '[Shotgun]',
+		Interval = 0.001,
 		},
 	    ['Animation'] = { -- once u click the keybinds it makes u use the Animation
 	        Lay = false, LayKey = Enum.KeyCode.T,
