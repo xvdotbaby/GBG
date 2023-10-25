@@ -1,2 +1,2 @@
 script_key = getgenv().Brutality['Options'].Key;
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/d01e47764c8a87032d8b6ab8a993862c.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1977608ec71c79da440b3973848e4d13.lua"))()
