@@ -20,49 +20,49 @@ https://github.com/xvdotbaby/Brutality/blob/main/test.lua
 
 
 getgenv().Brutality = {
-	    ['Options'] = {
+	    ['Options'] = { -- // the start up -- //
 	        Key = 'keyhere',        -- [ replace [keyhere] with your key ]
-	        Intro = true,
+	        Intro = true, -- // shows a intro once executed -- //
 	        BestConnection = false, -- // Finds the best ping -- //
-	        ['UnlockFps'] = {
+	        ['UnlockFps'] = { -- // fps unlocker credits to farzad -- ;;
 	            Enabled = true,     -- [ basicaly fps unlocker ]
-	            FpsCap = 999,
+	            FpsCap = 999, -- // anything abovoe 999 will break -- //
 	        },
-	        ['OptimizeUWP'] = false, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
+	        ['OptimizeUWP'] = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
 	    },
 	    ['Silent'] = {
-	        Enabled = true,
-	        Enable_KeyBind = true,
-	        Keybind = "p",
-	        Notification = true,
-	        Prediction = 0.135,
-	        Use_HitChance = true,
-	        HitChance = 300,
-	        HitParts = "HumanoidRootPart",
-	        NearestCursorHitpart = false,
+	        Enabled = true, -- // enables the silent aim -- //
+	        Enable_KeyBind = true, -- // toggable keybind  for the silent aim -- //
+	        Keybind = "p", -- // keybind that enables and disables the silent aim -- //
+	        Notification = true, -- // Notification on when the silent is enabled and disabled -- //
+	        Prediction = 0.135, -- // the sillent aim prediction -- //
+	        Use_HitChance = true, -- // enable the use of hitchance -- //
+	        HitChance = 300, -- // how accurate / how many times it'll hit -- //
+	        HitParts = "HumanoidRootPart", -- // hitparts incase u wanna be blatant -- //
+	        NearestCursorHitpart = false, -- // NearestCursorHitPart -- //
 	        HitPart_Mode = 'Nearest Point' -- 'Nearest Part', 'Nearest Point', 'Default',
 	    },
 	    ['AimAssist'] = {
-	        Enabled = true,
-	        Keybind = "c",
-	        FirstPerson = true,
-	        ThirdPerson = true,
-	        Predict = true,
-	        Prediction = 0.115,
-	        Smooth = true,
-	        SmoothValue = 0.014,
-	        HitPart = "HumanoidRootPart",
-	        NearestPart = true,
+	        Enabled = true, -- // Enables the AimAssist -- //
+	        Keybind = "c", -- // The Aimassist KeyBind -- //
+	        FirstPerson = true, -- // First Person Check -- //
+	        ThirdPerson = true,  -- // Third Person Check -- //
+	        Predict = true, -- // Enable the option to predict -- //
+	        Prediction = 0.115, -- // Predictin Amount use 0.1429, 0.125, 0.127, 0.121 -- //
+	        Smooth = true, -- // Enable Smoothness -- //
+	        SmoothValue = 0.014, -- // The Smoothness Value / Amount -- //
+	        HitPart = "HumanoidRootPart", -- // The Tracing/Targetted Hit Part -- //
+	        NearestPart = true, -- // Nearest Part for it to toggle on / trace -- //
 	    },
 	    ['Fov'] = {
 	        ['Silent'] = {
-	        Visible = true,
-	        Radius = 35,
-	        Default = 20,
-	        Color = "255, 255, 255"
+	        Visible = true, -- // Makes the FOV Visible -- //
+	        Radius = 35, -- // The size of the FOV -- //
+	        Default = 20, -- // keep this as default -- //
+	        Color = "255, 255, 255" -- // the color use the names or rgb color codes -- //
 	        },
 	        ['AimAssist'] = {
-	        Radius = 35,
+	        Radius = 35, -- // AimAssist Radius
 	        },
 	    },
 	    ['ChecksV1'] = {            -- // For Silent -- //
@@ -196,4 +196,4 @@ getgenv().Brutality = {
 	    },
 	}
 
-loadstring(game:HttpGet(""))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xvdotbaby/Brutality/main/Loader"))()
