@@ -14,7 +14,7 @@
  ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
  
 https://discord.gg/brutalitycc
-https://raw.githubusercontent.com/VdotBabyy/Kos.cc/main/table.lua
+https://github.com/xvdotbaby/Brutality/blob/main/test.lua
 
 --]]
 
