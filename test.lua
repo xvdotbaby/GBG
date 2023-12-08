@@ -7,6 +7,18 @@
 ╚██████╔╝██████╔╝╚██████╔╝
  ╚═════╝ ╚═════╝  ╚═════╝ 
 
+Supported Games (Credits to farzad for providing it)
+Da Hood
+Hood Modded
+Da Uphill
+Da Bank
+Da DownHill
+Nostalgia Hood
+Hood aim|
+Da Hood Bot Aim Trainer
+1v1 Hood aim trainer
+Moon Hood
+Arsenal (Soon)
 
 --]]
 
