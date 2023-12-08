@@ -139,4 +139,4 @@ getgenv().Gbg = {
     }
 }
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xvdotbaby/Brutality/main/Loader"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xvdotbaby/GBG/main/Loader.lua"))()
