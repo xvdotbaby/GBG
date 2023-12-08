@@ -25,8 +25,7 @@ Arsenal (Soon)
 
 getgenv().Gbg = {
     ["Options"] = {
-        Intro = true,                -- Shows a image when exec --
-        RoProBestConnection = false, -- Finds The Best Ping Server In Ur Region --
+        Intro = true,                -- Shows the Loader when executed
         RemoveErrors = true, -- removes f9 errors
     },
     Universal = {
