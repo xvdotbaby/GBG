@@ -17,13 +17,6 @@ getgenv().Gbg = {
         RoProBestConnection = false, -- Finds The Best Ping Server In Ur Region --
         RemoveErrors = true, -- removes f9 errors
     },
-    ['UnlockFps'] = {
-        Enabled = true,
-        FpsCap = 999,
-    },
-    ['OptimizeUWP'] = {
-        EnableOptimizeUwp = true, -- optimizes UWP ( by alot / unlocks hz, makes game smoother, more fps)
-    },
     Silent = {
         Enabled = true,              -- Enables The Silent Aim --
         Mode = "FOV",                -- FOV or Target
@@ -83,18 +76,7 @@ getgenv().Gbg = {
         Anti_Aim_Viewer = true,                -- Anti Aim Viewer
     },
     Settings = {                               -- Settings
-        AutoLowGFX = false,                    -- Auto Low GFX
-        MuteBoomBox = false,                   -- Mutes boomboxes
-        AutoReload = false,                    -- Auto reloads
         AutoPrediction = true,                 -- Vengeance priv auto prediction
-    },
-    TriggerBot = {                             -- Triggerbot
-        Enabled = false,                       -- enables TriggerBot
-        Alert = true,                          -- alerts when TriggerBot is toggled on and off
-        Use_Toggle = true,                     -- Enable toggle
-        EnableDelay = true,                    -- Triggerbot delay amount
-        Toggle = "T",                          -- the toggle to enable and disable
-        Delay = 0.001,                         -- Delay Amount lower = fast ', Higjet = slower
     },
     Animation = {                              -- Animations
         Lay = true,                            -- Lay shortcut
@@ -107,18 +89,6 @@ getgenv().Gbg = {
         SturdyKey = Enum.KeyCode.H,
         Griddy = false,                        -- Griddy shortcut
         GriddyKey = Enum.KeyCode.G,
-    },
-
-    Memory = {                    -- memory spoofer
-        Enabled = true,           -- enables the memory spoofer
-        Start = 1231.31,          -- Minimum of memory
-        End = 1461.61,            -- Maximum of memory
-    },
-    Macro = {                     -- Macro
-        Enabled = true,           -- Enables the macro
-        KeyBind = "Z",            -- Macro keybind
-        BypassMacroAbuse = false, -- Bypass macro abuse
-        Speed = 1,                -- speed ', keep at 1
     },
     GunFOV = {                    -- Gun FOV
         Enabled = true,           -- enables gun fov
