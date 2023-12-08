@@ -29,6 +29,9 @@ getgenv().Gbg = {
         RoProBestConnection = false, -- Finds The Best Ping Server In Ur Region --
         RemoveErrors = true, -- removes f9 errors
     },
+    Universal = {
+    Use_HitChance = true, -- enable hit chance
+    },
     Silent = {
         Enabled = true,              -- Enables The Silent Aim --
         Mode = "FOV",                -- FOV or Target
@@ -37,9 +40,9 @@ getgenv().Gbg = {
         Alert = true,                -- alerts when toggled on and off
         Precision = true,            -- enables prediction
         PrecisonAmount = 0.12327,    -- Prediction
-        Use_HitChance = true,        -- enable hit chance
         HitChance = 300,             -- Hitchance amount
-        TargettedParts = "Head",     -- Head, UpperTorso, HumanoidRootPart, LowerTorso, LeftArm, LeftHand, RightArm, RightHand, LeftLeg, LeftFoot, RightLeg, RightFoot --
+        AirShot_HitChance = 300, -- Airshot hitchance amount
+        HitParts = "Head",     -- Head, UpperTorso, HumanoidRootPart, LowerTorso, LeftArm, LeftHand, RightArm, RightHand, LeftLeg, LeftFoot, RightLeg, RightFoot --
         NearestCursorHitpart = true, -- Nearest Point
         NearestHitPart = false,      -- Nearest Part
     },
@@ -48,7 +51,7 @@ getgenv().Gbg = {
         Toggle = "c",                    -- aim assist bind
         PrecisionAmount = 0.1421,        -- prediction
         PrecisionValue = 0.0959,         -- precision smoothness
-        TargetPart = "HumanoidRootPart", -- trace part
+        HitPart = "HumanoidRootPart", -- trace part
         NearestCursorHitpart = true,     -- nearest point
         NearestHitPart = false,          -- nearest part
         Disable_Outside_Fov = true,      -- disable the use of outside fov
@@ -73,7 +76,6 @@ getgenv().Gbg = {
         Color = Color3.fromRGB(255, 255, 255), -- Radius rgb color
     },
     Checks = {                                 -- Checks
-        SelfKO = true,                         -- Self.Knocked
         Wall = true,                           -- Wall Check
         Knocked = true,                        -- Knocked Check
         Grabbed = true,                        -- Grabbed Check
@@ -120,5 +122,3 @@ getgenv().Gbg = {
         DrumGun = 10.495          -- drumgun fov
     }
 }
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xvdotbaby/GBG/main/Loader.lua"))()
