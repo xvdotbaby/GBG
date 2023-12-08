@@ -14,7 +14,7 @@ Da Uphill
 Da Bank
 Da DownHill
 Nostalgia Hood
-Hood aim|
+Hood aim
 Da Hood Bot Aim Trainer
 1v1 Hood aim trainer
 Moon Hood
